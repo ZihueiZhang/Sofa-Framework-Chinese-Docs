@@ -44,7 +44,7 @@ void reset();
 ````
 void draw();
 ````
-** getContext() **  
+**getContext()**  
 每个SOFA组件都要一个上下文。通过将此上下文转换为 simulation::Node* ,您可以设法获得包含组件的节点。Node是一个非常有用的组件，因为您可以从它们启动Visitors，或者快速获得关于节点内容的信息。然而，我们坚持这样一个事实，即不建议通过上下文访问其他组件，而是通过创建Link/DataLink。  
 ````
 sofa::core::objectmodel::BaseContext* getContext();
@@ -74,5 +74,5 @@ void handleEvent ( core::objectmodel::Event* ev )
  - CollisionBeginEvent
  - CollisionEndEvent
  - ToPologyChangeEvent
- - UpdateMappingEndEvent
+ - UpdateMappingEndEvent  
 更多[Event](https://www.sofa-framework.org/community/doc/programming-with-sofa/api-overview/events-in-sofa/)信息。  
