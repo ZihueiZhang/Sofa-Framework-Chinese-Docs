@@ -1,17 +1,17 @@
 # Scene graph
 SOFA 中的模拟被描述为具有内在广义层次结构的场景。 该场景由组织为树或有向无环图 (DAG) 的节点组成。 不同的模拟对象在不同的节点中描述，同一对象的不同表示可以在不同的子节点中完成。
 
-[image](./images/Images-tuto.001.jpg)
+![image](./images/Images-tuto.001.jpg)
 
 ## Structure of a scene
 场景从称为“root”节点的父节点开始。 所有其他节点（称为子节点）都继承自该主节点。 在图1中，定义了第一子节点“肝脏”并表示第一对象。 通常，一个节点gather与同一对象相关联的组件（相同的自由度）。
 
 这种设计是高度模块化的，因为场景中的组件彼此独立。 通过更改图中的一个组件，可以简单地将一个物理模型（带有 SpringForceField 的弹簧springs）替换为另一个（带有 TriangleFEMForceField 的三角 FEM）。 同样，通过修改场景文件中的一行 XML，可以将显式集成方案 (EulerSolver) 替换为隐式集成方案 (EulerImplicitSolver)。 框架的这种高度模块化是由下面描述的scenegraph-visitor approach引起的。
 
-[image](./images/Images-tuto.002.jpg)
+![image](./images/Images-tuto.002.jpg)
 如图 2 所示，节点可以在图中按顺序构造。 这种分层图允许具有相同对象的多个表示。 在示例中，第一个子节点“肝脏”实现了肝脏的机械行为（六面体网格），而子节点“视觉”描述了肝脏的表面模型（三角网格）。
 
-[image](./images/Images-tuto.003.jpg)
+![image](./images/Images-tuto.003.jpg)
 图 3 显示了涉及两个不同对象的模拟。 一个节点可以计算肝脏的机械行为，而第二个节点可以模拟心脏的电行为。 这两个系统依赖于两个不同的自由度，即不同的物理现象。 因此，它们必须在两个不同的节点中进行描述。 此功能显示了 SOFA 轻松开发高级耦合模型的能力。
 
 要在 SOFA 中构建模拟，可以使用以下两种方式编写场景图：
