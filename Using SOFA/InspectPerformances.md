@@ -81,7 +81,7 @@ Steps Duration Statistics (in ms) :
 
 此选项允许在 graphView 中查看动画步骤持续时间 (ms)，然后允许在图表或滑块上导航并分析在此动画步骤期间执行的不同子步骤。 子步骤以正确的顺序显示在Tree中，并带有各自的时间和百分比（关于完整的步骤持续时间）。 该工具的设计灵感来自 Unity3D profiler。
 
-![image](./images/TimerProfile.png)
+![image](./images/TimerProfiler.png)
 
 各列的说明：
 
