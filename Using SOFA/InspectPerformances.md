@@ -81,7 +81,7 @@ Steps Duration Statistics (in ms) :
 
 此选项允许在 graphView 中查看动画步骤持续时间 (ms)，然后允许在图表或滑块上导航并分析在此动画步骤期间执行的不同子步骤。 子步骤以正确的顺序显示在Tree中，并带有各自的时间和百分比（关于完整的步骤持续时间）。 该工具的设计灵感来自 Unity3D profiler。
 
-[!image](./images/TimerProfile.png)
+![image](./images/TimerProfile.png)
 
 各列的说明：
 
@@ -100,15 +100,15 @@ Steps Duration Statistics (in ms) :
 #### How to enable the trace of the visitors
 需要在SOFA配置中激活选项 SOFA_DUMP_VISITOR_INFO。 它应该默认启用。 如果没有，可以使用 **SofaVerification** 来修改 SOFA 的配置。
 
-[!image](./images/TraceVisitorLogTime1.png)
+![image](./images/TraceVisitorLogTime1.png)
 
 #### Quickly find information
 要查找特定访问者或对组件的调用，可以使用搜索栏：
-[!image](./images/TraceVisitorLogTime_Focus1.png)
+![image](./images/TraceVisitorLogTime_Focus1.png)
 
 #### View State vectors
 另一个有趣的功能是可以跟踪状态向量的演变：只需启用该选项，并指定粒子数量； -1 表示所有粒子。
-[!image](./images/TraceVisitorLogTime_Vector1.png)
+![image](./images/TraceVisitorLogTime_Vector1.png)
 在这里，我们跟踪 2 号和 3 号粒子。一个 FixedConstraint 在这个场景中作用于粒子 3：它过滤其速度和加速度，并将其设置为零，以充当固定粒子。 我们可以可视化 ApplyConstraint 访问者对状态向量的影响。
 
 #### Add new debug information
