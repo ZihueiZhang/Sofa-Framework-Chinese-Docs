@@ -1,5 +1,7 @@
 在linux下的配置基本可以按照官方教程来，但是有几个点需要注意。
 1. 安装software-properties-common python-software-properties时可能汇报错；
+        报错信息：E: 软件包 python-software-properties 没有可安装候选
+        解决方法：将该命令替换为 software-properties-common
 2. 安装cmake的过程参考https://blog.csdn.net/Fly_hps/article/details/106663431;
 3. Qt下载完成后，右键更改properties，可以一键运行；
 4. IDE建议使用Clion。
