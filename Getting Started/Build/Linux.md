@@ -112,12 +112,12 @@ sudo apt install libblas-dev liblapack-dev
 ### Setup your source and build directories
 To set up clean repositories, we recommend to arrange the SOFA directories as follows:
 
-sofa/
-├── build/
-│   ├── master/
-│   └── v21.06/
-└── src/
-    └── < SOFA sources here >
+sofa/ 
+├── build/ 
+│   ├── master/ 
+│   └── v21.06/  
+└── src/ 
+    └── < SOFA sources here > 
 First, checkout the sources from Git repository:
 
 Get the current stable version on the v21.06 branch:
