@@ -54,13 +54,13 @@
  - sofa微信群
 
 ## Q3:对于柔性/连续体机器人仿真，有哪些常用的库函数
-### plugin
-● softrobotics（python）,柔性机器人
-● beamadapter(C++),柔性管
-### component
-● beam，基础梁结构
-其他
-● soft-robotics tutorials, The Defrost Tutorials for Soft-robotics using Sofa.https://github.com/SofaDefrost/Tutorials
+#### plugin
+ - softrobotics（python）,柔性机器人
+ - beamadapter(C++),柔性管
+#### component
+ - beam，基础梁结构
+#### 其他
+ - soft-robotics tutorials, The Defrost Tutorials for Soft-robotics using Sofa.https://github.com/SofaDefrost/Tutorials
 
 ## Q4：用sofa进行仿真开发的思路、开发过程中会遇到的难题以及解决方法
 ### 基于sofa的仿真开发思路
